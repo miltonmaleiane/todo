@@ -12,3 +12,6 @@ def sobre(request):
 
 def about(request):
     return render(request,"tasks/about.html")
+
+def yourName(request, name):
+    return render(request,"tasks/yourname.html",{'name':name})
